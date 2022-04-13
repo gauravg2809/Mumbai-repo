@@ -1,0 +1,29 @@
+Skill: AMAZON-CLOUD-AWS - LTI - Prakash.Shelke@lntinfotech.com
+
+Devops - contacthrelizabeth@gmail.com
+
+AWS - DXC technology - payal.nagar@dxc.com.
+
+abhay saxena
+
+
+sgh935wyrp - box -3 / bay 3 - raid -5
+
+
+
+INSTANCE=$(\
+aws ec2 run-instances \
+--image-id ami-0eb324d928acca58a \
+--subnet-id subnet-057f0144cd113d2e4 \
+--security-group-ids sg-0abaab02260728959 \
+--user-data file://./UserDataInstanceB.txt \
+--instance-type t3.micro \
+--tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=InstanceB}]' \
+--query 'Instances[*].InstanceId' \
+--output text \
+)
+
+
+awspolicygen
+
+uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuiiiiiiiiiiiiiiiiiiiiiiiiiiu
